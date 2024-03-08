@@ -1,0 +1,62 @@
+/* -- START OF BASE STYLES -- */
+
+/* Theme stuff */
+:root {
+  --background-primary: #202021;
+  --background-secondary: #1d1b1b;
+  --font-color: #C7C5C5;
+  --accent: #baf0e8;
+}
+
+:root .theme-dark {
+  background-color: var(--background-primary);
+  color: var(--font-color);
+}
+
+:root .theme-dark ::selection {
+  background: var(--accent);
+  color: black;
+}
+
+:root .theme-light {
+  --background-primary: #ffffff;
+  --background-secondary: #e7e7e7;
+  --font-color: #0000;
+  --accent: #366460;
+}
+
+:root .theme-light ::selection {
+  background: #baf0e8;
+  color: black;
+}
+/* -- -- */
+
+
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  font-family: Inter,system-ui,sans-serif;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+/* -- END OF BASE STYLES -- */

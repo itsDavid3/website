@@ -1,27 +1,140 @@
-* {
-    padding: 0;
-    margin: 0;
-    min-width: 0;
+/* 
+    The code below is probably abhorrent
+    I'm learning, don't bully pls :)
+*/
+
+header {
+    position: relative;
+    z-index: 2;
+    max-width: 25em;
+    min-width: 17em;
+    top: 0;
+    margin-inline: auto;
 }
 
-body {
-    background-color: #272625;
+main {
+    width: min(40em, 100% - 4rem);
+    margin-inline: auto;
 }
 
-.yes { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+a {
+    text-decoration: underline transparent;
+    transition: text-decoration 300ms ease;
 }
 
-.yes p {
-    text-align: center;
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+a:hover {
+    text-decoration: underline;
+    color: var(--accent);
 }
 
-.yes img {
-    height: 400px;
+.active {
+    color: var(--accent);
 }
+
+
+/* Start of header stuff */
+.wrapperAboutMeTop {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+.wrapperAboutMeTop p {
+    padding: 0 1em 0;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.wrapperAboutMeTop img {
+    width: 5em;
+    display: block;
+    border-radius: 35px;
+    transition: transform .7s ease-in-out;
+}
+
+.wrapperAboutMeTop img:hover {
+    transform: rotate(180deg);
+}
+
+.wrapperAboutMeTop a {
+    cursor: default;
+}
+
+/* Source code button */
+.wrapperAboutMeTop p > a {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    padding: 3px 6px;
+    font-size: 13px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #0000001f;
+    background-color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wrapperAboutMeTop p a > span {
+    color: white;
+}
+
+.wrapperAboutMeTop p a > img {
+    width: 13px;
+    margin-right: 6px;
+}
+/* -- -- */
+
+
+.navbar {
+    border-radius: 25px;
+    padding: 1em 0;
+    transition: all .50s ease;
+    background-color: var(--background-secondary);
+}
+
+.navbarButtons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.navbarButtons li {
+    margin: 0 10px;
+}
+/* End of header stuff */
+
+
+/* Start of main stuff */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 15rem;
+    margin-top: 3%;
+    font-size: 1.3rem;
+}
+
+.mainContent p {
+    padding: 10px 0;
+    line-height: 160%;
+}
+
+.mainContent h1 {
+    margin-inline: auto;
+}
+
+.mainContent h1:where(:not(:first-child)) {
+    margin-top: 7%;
+}
+
+.mainContent h1 > span {
+    color: var(--accent);
+}
+
+/* End of main stuff */
+
+
+

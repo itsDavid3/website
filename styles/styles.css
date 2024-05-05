@@ -1,0 +1,129 @@
+/* 
+    The code below is probably abhorrent
+    I'm learning, don't bully pls :)
+*/
+.the-voices-are-getting-louder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    margin-inline: auto;
+    flex: 1 1 0%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: underline transparent;
+    transition: text-decoration 300ms ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+.active { color: var(--accent); }
+
+
+/* Start of header stuff */
+/*
+* Topmost part with the image and name 
+*/
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5em 0;
+}
+
+.profile-header a img {
+    border-radius: 35px;
+    cursor: default;
+    width: 5em;
+    transition: transform .7s ease-in-out;
+}
+
+.profile-header a img:hover {
+    transform: rotate(180deg);
+}
+
+.profile-header span {
+    font-size: 1.6rem;
+    color: var(--accent);
+}
+
+/* 
+* Navigation bar with links n stuff 
+*/
+nav {
+    border-radius: 25px;
+    padding: 1em 0;
+    background-color: var(--background-secondary);
+    width: min(23em, 100% - 4rem);
+}
+
+.navbar-buttons ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    font-size: var(--font-size);
+}
+
+.navbar-buttons li {
+    margin: 0 0.5em;
+}
+
+
+
+/* Start of main stuff */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 55rem;
+    font-size: calc(var(--font-size) + 0.2rem);
+}
+
+section p {
+    padding: 10px 0;
+    line-height: 160%;
+}
+
+section h1 {
+    margin-inline: auto;
+}
+
+section h1:where(:not(:first-child)) {
+    margin-top: 7%;
+}
+
+section h1 > span {
+    color: var(--accent);
+}
+
+
+
+/* Start of footer stuff */

@@ -1,0 +1,27 @@
+section ul li {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+section li {
+  display: inline-flex;
+  align-items: center;
+}
+
+section svg {
+  height: 28px;
+  fill: aliceblue;
+}
+
+section ul li > a {
+  text-decoration: none;
+  word-break: break-all;
+  border-radius: 25px;
+  padding: 0.1em 0.6em;
+}
+
+section h1 {
+  text-align: center;
+}

@@ -4,8 +4,10 @@
 :root {
   --background-primary: #202021;
   --background-secondary: #1d1b1b;
-  --font-color: #C7C5C5;
   --accent: #baf0e8;
+
+  --font-color: #C7C5C5;
+  --font-size: 1.3rem;
 }
 
 :root .theme-dark {
@@ -38,7 +40,7 @@
   margin: 0;
   padding: 0;
   min-width: 0;
-  font-family: Inter,system-ui,sans-serif;
+  font-family: "Inter",system-ui,sans-serif;
   text-decoration: none;
   color: inherit;
   box-sizing: border-box;

@@ -1,6 +1,6 @@
 # » itsdavid.eu
 
-My cool and awesome personal website!
+My cool and awesome and swag and wicked and wild personal website!
 
 You can check out the source in this repo, or [go take a look at it live](https://itsdavid.eu)!
 
